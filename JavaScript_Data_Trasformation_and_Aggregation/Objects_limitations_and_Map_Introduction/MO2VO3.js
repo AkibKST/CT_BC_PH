@@ -33,6 +33,4 @@ const tagFromPosts = [
 const filterTags = new Set(tagFromPosts.flat()); //** Flatten the nested array of tags and create a Set to get unique tags
 console.log(filterTags);
 
-//some
-const currentUserRoles = ["user", "editor"];
-const featureAccessRoles = ["admin", "manager"];
+const filterTagsWithArray = [...new Set(tagFromPosts.flat())]; //** Flatten the nested array of tags, create a Set to get unique tags, and convert it back to an array
